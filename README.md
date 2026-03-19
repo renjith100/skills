@@ -16,7 +16,7 @@ For other skills, install directly from the original maintained sources:
 
 | Skill | Source |
 |-------|--------|
-| `node-best-practices` | [mcollina/skills](https://github.com/mcollina/skills) |
+| `node` | [mcollina/skills](https://github.com/mcollina/skills) |
 | `next-best-practices` | [vercel/nextjs-skills](https://github.com/vercel/nextjs-skills) |
 
 ## Usage
