@@ -34,7 +34,7 @@ sequentially (session-001, session-002, …).
 ## Installation
 
 ```bash
-cd /Users/renjith/Developer/worklog-cli
+cd /path/to/worklog-cli
 pnpm install
 pnpm build
 pnpm link --global
@@ -43,11 +43,13 @@ pnpm link --global
 After linking, `worklog` is available globally from any directory.
 
 **Dev mode (no build needed):**
+
 ```bash
 pnpm dev start oracle-ticket
 ```
 
 **Watch mode (auto-rebuild on changes):**
+
 ```bash
 pnpm build --watch
 ```
@@ -59,6 +61,7 @@ pnpm build --watch
 ### `worklog start <taskName>`
 
 Creates a new numbered session file. Prompts interactively for:
+
 1. `🎯 Goal:` — what this session aims to achieve (free text)
 2. `🧩 Steps (comma separated):` — concrete planned steps
 
@@ -82,6 +85,7 @@ Use for: blockers, ideas, findings, observations mid-session. Zero friction — 
 ### `worklog end <taskName>`
 
 Closes the session with a structured review. Prompts interactively for:
+
 1. `Completed:` — what was actually done
 2. `Not Completed:` — what was planned but skipped
 3. `Why:` — honest, factual reason
@@ -103,6 +107,7 @@ worklog resume oracle-ticket
 ```
 
 Output:
+
 ```
 === LAST SESSION ===
 
@@ -123,31 +128,39 @@ Every session file uses this exact template:
 
 ```markdown
 # Session N - <taskName>
+
 Date: 22 Mar 2026, 6:45 pm
 
 ## 🎯 Goal
+
 <goal>
 
 ## 🧩 Steps
+
 [ ] step 1
 [ ] step 2
 [ ] step 3
 
 ## 🧠 Notes During Work
+
 - <notes appended via `worklog note`>
 
 ## 📊 Review
 
 ### ✅ Completed
+
 <what was done>
 
 ### ❌ Not Completed
+
 <what was skipped>
 
 ### 🤔 Why
+
 <honest reason>
 
 ### ▶️ Next Step (CRITICAL)
+
 <exact next action — drives the resume command>
 ```
 
@@ -157,8 +170,9 @@ Date: 22 Mar 2026, 6:45 pm
 
 > **Prerequisite:** The `worklog` CLI must be globally installed. Run `worklog` to verify.
 > If the command is not found, stop and ask the user to install it first:
+>
 > ```bash
-> cd /Users/renjith/Developer/worklog-cli && pnpm install && pnpm build && pnpm link --global
+> cd /path/to/worklog-cli && pnpm install && pnpm build && pnpm link --global
 > ```
 
 ### The agent IS the formatting layer
@@ -200,6 +214,7 @@ printf "Close the oracle support ticket\nReproduce the bug, check the API logs, 
 **Step 3 — Confirm back to the user:**
 
 > "Session started. Here's what was logged:
+>
 > - **Task:** oracle-ticket
 > - **Goal:** Close the oracle support ticket
 > - **Steps:** Reproduce the bug / Check the API logs / Find the root cause / Apply the fix
@@ -260,7 +275,7 @@ Agent: [formats, then runs]
 > "What did you complete?"
 > "What did you not complete?"
 > "Why?"
-> "What is the exact next step?" *(must be specific — not "continue work")*
+> "What is the exact next step?" _(must be specific — not "continue work")_
 
 **Step 2 — Format the answers, then run:**
 
@@ -272,7 +287,7 @@ printf "Found root cause — missing index on requests table\nFix not applied\nR
 **Step 3 — Confirm back to the user:**
 
 > "Session closed. Next step saved:
-> *Open query.sql and add index on requests.task_id*"
+> _Open query.sql and add index on requests.task_id_"
 
 ---
 
