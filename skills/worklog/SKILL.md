@@ -18,7 +18,7 @@ losing context when returning to a task after 1–2 days away.
 
 All files live at `~/worklogs/` — fixed home directory, regardless of where the command is run.
 
-```
+```text
 ~/worklogs/
   <task-name>/
     session-001.md
@@ -108,7 +108,7 @@ worklog resume oracle-ticket
 
 Output:
 
-```
+```text
 === LAST SESSION ===
 
 /Users/renjith/worklogs/oracle-ticket/session-003.md
@@ -181,7 +181,7 @@ The user will speak naturally — messily, incompletely, with filler words. The 
 responsibility is to always reformat and restructure the user's input into clean, logical,
 well-written text before passing it to the CLI. Never pass raw user speech directly.
 
-```
+```text
 User:  yeah so like the thing keeps breaking whenever i send big data,
        seems like maybe 30 seconds or something and then it just dies
 
@@ -223,7 +223,7 @@ printf "Close the oracle support ticket\nReproduce the bug, check the API logs, 
 
 **Full example conversation:**
 
-```
+```text
 User:  I want to start a work session on my oracle ticket.
 
 Agent: Sure. Two quick questions:
@@ -257,7 +257,7 @@ worklog note oracle-ticket Found root cause — missing index on requests table
 
 Always reformat the user's raw input into a clean, concise note before running:
 
-```
+```text
 User:  note that the thing is timing out after 30 seconds when the payload is big
 
 Agent: [formats, then runs]
