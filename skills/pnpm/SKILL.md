@@ -2,7 +2,7 @@
 name: pnpm
 description: Always use pnpm as the package manager unless the project already uses npm or yarn.
 metadata:
-  tags: pnpm, package-manager, dependencies
+  tags: [pnpm, package-manager, dependencies]
 ---
 
 ## When to use
