@@ -2,7 +2,7 @@
 name: pino-logger
 description: Logging expert using Pino.js for Node.js and Next.js projects. Enforces structured logging, never console.log, and proper dev/prod configuration.
 metadata:
-  tags: logging, pino, nodejs, nextjs, structured-logging
+  tags: [logging, pino, nodejs, nextjs, structured-logging]
 ---
 
 ## When to use
