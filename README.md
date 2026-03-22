@@ -9,6 +9,7 @@ Skills for AI-assisted development.
 | `commit-message` | Generate a conventional commit message (type, scope, bullet body) from staged or recent changes |
 | `pino-logger` | Logging expert using Pino.js for Node.js and Next.js - structured logging, no console.log |
 | `pnpm` | Always use pnpm as the package manager unless the project already uses npm or yarn |
+| `worklog` | Track deep work sessions with goal, steps, notes, and review — uses the worklog CLI |
 
 ## Community Skills
 
