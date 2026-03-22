@@ -22,13 +22,13 @@ All files live at `~/worklogs/` — fixed home directory, regardless of where th
 ```text
 ~/worklogs/
   <task-name>/
-    session-001.md
-    session-002.md
-    session-003.md
+    session-001-2026-03-22.md
+    session-002-2026-03-23.md
+    session-003-2026-03-24.md
 ```
 
 One folder per task. One file per deep work session. Sessions are zero-padded and numbered
-sequentially (session-001, session-002, …).
+sequentially (session-001-YYYY-MM-DD, session-002-YYYY-MM-DD, …).
 
 ---
 
@@ -112,7 +112,7 @@ Output:
 ```text
 === LAST SESSION ===
 
-/Users/renjith/worklogs/oracle-ticket/session-003.md
+/Users/renjith/worklogs/oracle-ticket/session-003-2026-03-22.md
 
 ▶️ Next Step:
 
@@ -309,7 +309,7 @@ For analysis, summarization, or pattern detection:
 ```bash
 # All sessions for a task
 ls ~/worklogs/oracle-ticket/
-cat ~/worklogs/oracle-ticket/session-001.md
+cat ~/worklogs/oracle-ticket/session-001-2026-03-22.md
 
 # All tasks
 ls ~/worklogs/
