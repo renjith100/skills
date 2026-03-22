@@ -2,6 +2,8 @@
 name: worklog
 description: Use this skill when the user wants to log work, track a task session, start deep work, capture notes during work, end a session with a review, or resume a previous task. Also use when the user says "I'm going to work on X", "log my work", "what did I do on X", or "continue working on X".
 version: 1.0.0
+metadata:
+    tags: productivity, worklog, cli
 ---
 
 # Worklog CLI Skill
